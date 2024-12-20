@@ -1,0 +1,54 @@
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.task {
+    background-color: #f8f9fa; /* Light grey background */
+    border: 2px solid #007bff; /* Blue border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+    transition: transform 0.2s ease-in-out; /* Animation for hover effect */
+}
+
+.task:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+
+.task h5 {
+    color: #007bff; /* Blue text for task titles */
+}
+
+.task a {
+    color: #0056b3; /* Darker blue for links */
+}
+
+  .nav-sub-hov >a:hover{
+    background-color: #ccc;
+    color: black !important;
+  }
+  .nav-link.active {
+    background-color: #ccc;  /* Màu khi active */
+    color: black !important;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  @media (max-width: 768px) {
+  .card-img-top {
+    height: auto; /* Ảnh sẽ tự điều chỉnh chiều cao */
+  }
+  
+  .nav-link {
+    font-size: 14px; /* Điều chỉnh kích thước chữ trên thiết bị nhỏ */
+  }
+  }
+  
+  @media (max-width: 576px) {
+  .animation-box {
+    padding: 1rem; /* Thu nhỏ padding trên màn hình nhỏ */
+  }
+  }
